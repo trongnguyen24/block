@@ -1,0 +1,408 @@
+@font-face {
+  font-family: 'Big Caslon';
+  src: url('BigCaslon-Medium.woff2') format('woff2'),
+    url('BigCaslon-Medium.woff') format('woff'),
+    url('BigCaslon-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.full {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg {
+  background-image: url(../images/bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e6e5d3;
+  background-position-x: center;
+}
+
+.bg1 {
+  background-image: url(../images/bg1.jpg);
+  /* background-size: cover; */
+}
+
+.bg2 {
+  background-image: url(../images/bg2.jpg);
+  background-size: cover;
+}
+.box-text {
+  display: flex;
+  padding: 50px 10px;
+}
+
+.ba {
+  width: 40%;
+  padding: 20px 35px;
+}
+.ba img {
+  max-width: 100%;
+}
+.bay {
+  width: 70%;
+  position: relative;
+}
+
+.pre,
+.next,
+.home,
+.men {
+  position: absolute;
+  background-size: contain;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+
+.pre {
+  background-image: url(../images/p.png);
+  left: 40px;
+  top: 40px;
+  padding: 0px 5px 0px 40px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #035e9a;
+}
+.next {
+  background-image: url(../images/n.png);
+  right: 40px;
+  top: 40px;
+  padding: 0px 5px 0px 40px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #035e9a;
+}
+.home {
+  background-image: url(../images/home.png);
+  left: 40px;
+  top: 15px;
+  padding: 5px 5px 0px 43px;
+  line-height: 1.2;
+  font-size: 2rem;
+  color: #e9e7d6;
+  z-index: 20;
+}
+.men {
+  background-image: url(../images/cat.png);
+  right: 40px;
+  top: 15px;
+  padding: 5px 5px 0px 43px;
+  line-height: 1.2;
+  font-size: 2rem;
+  color: #e9e7d6;
+}
+
+.quote {
+  position: relative;
+  padding: 20px 80px;
+  margin-bottom: 80px;
+}
+.quote::before,
+.quote2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../images/q1.png) center no-repeat;
+  left: 25px;
+  top: 5px;
+  background-size: contain;
+}
+
+.quote::after,
+.quote2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../images/q2.png) center no-repeat;
+  right: 20px;
+  bottom: 5px;
+  background-size: contain;
+}
+.text-tho {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+h1 {
+  font-size: 7.5rem;
+  line-height: 1.1;
+  margin: 10px 0 0;
+}
+h2,
+h4 {
+  margin: 2px 0;
+}
+h2 {
+  margin-top: 60px;
+}
+.box-p {
+  padding: 40px 0;
+}
+.owl-carousel {
+  margin-top: 30px;
+}
+.sli {
+  border: 2px solid #035e9a;
+  padding: 20px;
+  background-color: rgb(255 255 255 / 53%);
+  display: flex;
+  min-height: 430px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p.tex {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+p.but {
+  background: #035e9a;
+  padding: 4px 20px;
+  border-radius: 20px;
+  display: inline;
+  color: #fff;
+  width: 200px;
+  margin: 0 -100px 15px 0;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+
+.sliimg {
+  border: 0px;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 430px;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #e9e7d6;
+  justify-content: center;
+}
+
+.sliimg h5 {
+  text-shadow: 0px 1px 5px black;
+}
+
+.sliimg p.tex {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-shadow: 0px 1px 5px black;
+}
+
+.tit2 {
+  max-width: 700px;
+  margin: auto;
+  font-size: 2.1rem;
+}
+
+.sliimg p.but {
+  background: #e9e7d6;
+  padding: 4px 20px;
+  border-radius: 20px;
+  display: inline;
+  color: #035e9a;
+  width: 200px;
+  margin: 0 -100px 15px 0;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background: #035e9a;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  color: #e9e7d6;
+  display: flex;
+}
+.ma {
+  margin: auto;
+  color: #e6e5d4;
+  font-size: 2rem;
+  flex-grow: 1;
+  padding: 0 40px;
+}
+.container {
+  z-index: 5;
+}
+
+.bg-img1 {
+  width: 180px;
+  height: auto;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 200px;
+}
+.bg-img2 {
+  position: fixed;
+  right: 0;
+  top: 50%;
+}
+.quote2 {
+  position: relative;
+  padding: 20px 100px;
+  margin-bottom: 80px;
+  margin: 0 60px 80px;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  margin-top: 20px;
+}
+
+button.owl-dot {
+  width: 16px;
+  height: 16px;
+  background: #fff !important;
+  margin: 0 5px;
+  border-radius: 20px;
+  opacity: 0.4;
+}
+button.owl-dot.active {
+  opacity: 1;
+}
+.l {
+  text-align: left !important;
+}
+.c {
+  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+}
+.r {
+  text-align: right !important;
+}
+
+.max-460 {
+  max-width: 390px;
+  display: inline-block;
+  width: 100%;
+}
+
+.max-800 {
+  max-width: 1200px;
+  width: 100%;
+}
+.fle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.fle .sliimg,
+.fle .sli {
+  width: 40%;
+  margin: 20px;
+  position: relative;
+  max-width: 420px;
+}
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    height: 48px;
+  }
+  .men {
+    right: 20px;
+    top: 15px;
+    padding: 5px 5px 0px 25px;
+    line-height: 1.2;
+    font-size: 1.3rem;
+    color: #e9e7d6;
+  }
+  .home {
+    left: 20px;
+    top: 15px;
+    padding: 5px 5px 0px 25px;
+    line-height: 1.2;
+    font-size: 1.3rem;
+    color: #e9e7d6;
+    z-index: 20;
+  }
+  .quote2 {
+    position: relative;
+    padding: 20px 20px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .box-text {
+    display: flex;
+    padding: 50px 0px;
+  }
+  .quote::before,
+  .quote2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/q1.png) center no-repeat;
+    left: 25px;
+    top: -15px;
+    background-size: contain;
+  }
+  .bg-img1 {
+    display: none;
+  }
+  .bg-img2 {
+    display: none;
+  }
+  h2 {
+    font-size: 2.6rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.25;
+    letter-spacing: -0.1rem;
+  }
+  .fle .sliimg,
+  .fle .sli {
+    width: 100%;
+    margin: 20px;
+    position: relative;
+    max-width: 420px;
+  }
+  .fle {
+    flex-direction: column;
+  }
+  .tit2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container {
+    padding: 0;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+}
